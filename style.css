@@ -1,88 +1,229 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
 body {
     font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.7;
 }
 
+/* =========================
+   NAVIGATION BAR
+========================= */
+
 nav {
+    background-color: #1e293b;
+    padding: 15px;
     text-align: center;
-    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 nav a {
-    margin: 0 15px;
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     text-align: center;
-    margin-bottom: 50px;
+    padding: 60px 20px;
 }
 
-h1 {
+header h1 {
     font-size: 42px;
+    margin-bottom: 10px;
+    color: #38bdf8;
 }
 
-h2 {
-    border-bottom: 2px solid #ddd;
+header p {
+    font-size: 18px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+section h2 {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
     padding-bottom: 10px;
 }
 
-.btn {
-    background: black;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    display: inline-block;
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .skills span {
-    display: inline-block;
+    background-color: #334155;
     padding: 10px 15px;
-    margin: 5px;
-    background: #f0f0f0;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
+.skills span:hover {
+    background-color: #38bdf8;
+    color: black;
+    cursor: default;
 }
+
+/* =========================
+   LISTS
+========================= */
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
+/* =========================
+   PROJECT IMAGES
+========================= */
+
+img {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   PROJECT HEADINGS
+========================= */
+
+h3 {
+    color: #60a5fa;
+    margin-top: 30px;
+}
+
+h4 {
+    color: #cbd5e1;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
 a {
-    color: #0066cc;
-    text-decoration: none;
+    color: #38bdf8;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #7dd3fc;
 }
 
-img{
-width:100%;
-max-width:1000px;
-display:block;
-margin:20px auto;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
+/* =========================
+   HORIZONTAL LINE
+========================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #475569;
+    margin: 40px 0;
 }
 
-img:hover{
-transform:scale(1.01);
-transition:0.3s ease;
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact p {
+    font-size: 17px;
 }
 
-h4{
-margin-top:25px;
-margin-bottom:10px;
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+        text-align: center;
+    }
 }
 
