@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     line-height: 1.8;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -10,12 +13,45 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 42px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .btn {
     background: black;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills span {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
